@@ -16,24 +16,30 @@ import SUA from '../asset/SUA.png';
 import replit from '../asset/replit.png';
 import alx from '../asset/alx.png';
 import HackerRankBG from '../asset/HackerRankBG.png';
+import cart from '../asset/cart.png';
+import carousel from '../asset/carousel.png';
+import accordion from '../asset/accordion.png';
+import quote from '../asset/quote.png';
+import Phone from '../asset/Phone.png';
 
 
 export default function Portfolio() {
   return (
     <div>
         <section className="header">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">My Service</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Community Wall</a></li>
-            </ul>
+            <p id="nav">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Project">Projects</a>
+                <a href="#Community">Community</a>
+                <a href="#Contact">Contact</a>
+            </p>
         </section>
+        <div className="bgc">
         <main className="data">
             <div className="content">
-                <h1>I'm <b id="bold">Olusola Temitayo </b>, I am a Web developer, <br />
-                 writer, Pianist and Sport Enthusiast</h1>
+                <h1>I'm <b id="bold">Olusola Temitayo </b>, I am a Software developer, 
+                 writer, and Sport Analyst</h1>
                 <p>A MERN stack web developer with expertise in MongoDB, Express JS, React and Node JS</p>
             </div>
             <div className="prof">
@@ -41,7 +47,7 @@ export default function Portfolio() {
             </div>
             
         </main>
-        <main>
+          <main className="first-btn">
                 <span>
                     <button id="btn">Read the blog</button>
                 </span>
@@ -49,15 +55,6 @@ export default function Portfolio() {
                     <a id="href" href="More about Me">More about Me...</a>
                 </span>
             </main>
-        <div>
-            <span>
-                <img src={NogbN} alt=""id="logo" />
-                <img src={Nogb1} alt=""id="logo" />
-            </span>
-            <span>
-                <img src={Nogb2M} alt="" id="logo" />
-                <img src={Icon} alt=""id="logo" />
-            </span>
         </div>
         <div className="background">
             <main className="About">
@@ -65,8 +62,8 @@ export default function Portfolio() {
                     <img src={Prof} alt="" id="img" />
                 </span>
                 <span className="text">
-                      <h3>About Me</h3>
-                      <p id="test">I am Olaseinde Olusola Temitayo, A Freelancer, Web Developer, Software Engineer <br />
+                     <p id="About">About</p>
+                      <p id="test">My name is Olaseinde Olusola Temitayo, A Freelancer, Web Developer, Software Engineer <br />
                          Writer, Musicologist, Instructor and Sport Analyst. I'm passionate about building innovative <br />
                          creative codebased web and mobile application using stack such as HTML, CSS, Javascript, <br />
                          Jquery, Github, React, React Native, Express JS, Mongo DB and Node JS. I'm always eager to learn <br />
@@ -74,98 +71,101 @@ export default function Portfolio() {
                          an analytic thinker and I possess a possibility mindset. As a result of this, solving real life problem is <br />
                          my ultimate priority.
                       </p>
-                      <main>
+                        <span className="first-logo">
                          <img src={NogbN} alt=""id="logo" />
                          <img src={Nogb1} alt=""id="logo" />
                          <img src={Nogb2M} alt="" id="logo" />
                          <img src={Icon} alt="" id="logo" />
-                     </main>
+                        </span>
                 </span>
-            </main>
-        
-          <div className="Service">
-            <section className="Half">
-                <h3>My Service</h3>
-                <p id="test">MERN stack is a collection of technologies that enables <br />
-                 faster development.It is used by developers worldwide. The main  <br />
-                 purpose od using MERN stack is to developapp using Javascript only. <br />
-                 This is because the four technologies that make up the technology <br />
-                 stack are all JS-based.</p>
+            </main>  
+            <section className="myproj">
+                <h3 id="Project">Projects</h3>
+                <span className="link">
+                
+                    <span className="mini">
+                    <img src={cart} alt="" id="proj" />
+                   </span>
+                   <span>
+                     <img src={carousel} alt="" id="proj"/>
+                     
+                  </span>
+                  <span>
+                  <img src={accordion} alt="" id="proj"/>
+                  </span>
+                  <span>
+                  <img src={quote} alt="" id="proj"/>
+                  </span>
+                  <span>
+                    <img src={Phone} alt="" id="proj" />
+            
+                  </span>
+                </span>
             </section>
-            <span class="Halve">
-                <h3>Contact</h3>
-             <div className="CLOG">
-                <span id="cont">
-                    <img src={contact} alt="" id="contact" />
-                    <span>
-                     <h6>+234-7064-219-422</h6>
-                    </span>
-                </span>
-                <span id="mail">
-                    <img src={Email} alt="" id="email" /> 
-                    <span>
-                     <em>olusolatemitayo656@gmail.com</em>
-                    </span>
-                </span>
-             </div>
-
-            </span>
-        </div>
-        <div className="main">
-            <h1 id="tag">Community Wall</h1>
-            <section id="community">
-                <span>
+            <div>
+                <h3 id="Community">Community</h3>
+                <span className="container">
                     <img src={AWS} alt="" id="logo" />
-                    <img src={github} alt="" id="logo"/>
-                    <img src={replit} alt="" id="logo" />
-                </span>
-                <span>
-                    <img src={SUA} alt="" id="logo" />
-                    <img src={Decagon} alt="" id="logo" />
                     <img src={alx} alt="" id="logo" />
-                    <img src={HackerRankBG} alt="" id="logo" />
+                    <img src={SUA} alt="" id="logo" />
+                    <img src={Decagon} alt="" id="logo"/>
+                    <img src={github} alt="" id="logo"/>
+                    <img src={HackerRankBG} alt="" id="logo"/>
+                    <img src={replit} alt="" id="logo"/>
                 </span>
-            </section>
+            </div>
         </div>
-     </div>
         <section className="footer">
-         <span className="foot">
-            <div id="stack">
-                <h3><bold>GENERAL</bold></h3>
-                <option>Home</option>
-                <option>About</option>
-                <option>Products</option>
-                <option>Blog</option>
-            </div>
-            <div id="stack">
-            <h3><bold>STACKS</bold></h3>
-                <option>Mongo DB</option>
-                <option>Express</option>
-                <option>Node Js</option>
-                <option>React</option>
-            </div>
-            <div id="stack">
-            <h3><bold>EXTRA</bold></h3>
-                <option>Changelog</option>
-                <option>Meet up</option>
-                <option>Newsletter</option>
-                <option>Resume</option>
-                <option>Snippets</option>
-            </div>
-         </span>
-         <main className="slect">
-                <span>
-                    <input type="text"  id="in" placeholder="Enter your input here" />
-                    <button id="click">Submit</button>
+            <span className="group-foot">
+               <div className="foot">
+                  <span>
+                      <p>GENERAL</p>
+                      <li>Home</li>
+                      <li>About</li>
+                      <li>Projects</li>
+                      <li>Community</li>
+                      <li>Contact</li>
+                  </span>
+             </div>
+             <div className="foot">
+                  <span>
+                      <p>STACKS</p>
+                      <li>MongoDB</li>
+                      <li>Express</li>
+                      <li>React</li>
+                      <li>Node js</li>
+                      <li>Javascript</li>
+                  </span>
+             </div>
+             <div className="foot">
+                  <span>
+                      <p>EXTRA</p>
+                      <li>Changelog</li>
+                      <li>Meet up</li>
+                      <li>Newsletter</li>
+                      <li>Resume</li>
+                      <li>Snippets</li>
+                  </span>
+             </div>
+            </span> 
+            <div className="bottom">
+                <span className="info">
+                    <input type="text-submit" id="in" placeholder="Enter message here" />
+                    <input type="submit"  id="click" placeholder='' />
                 </span>
-            <span className="favicon">
-               <img src={fb} alt=""   id="fav"/>
-               <img src={tweet} alt="" id="fav" />
-               <img src={insta} alt="" id="fav" />
-            </span>
-        </main>
+                <span className="Icon">
+                    <img src={fb} alt="" id="Icon" />
+                    <img src={insta} alt="" id="Icon" />
+                    <img src={tweet} alt="" id="Icon" />
+                </span>
+                <span className="contact-info">
+                    <p id="Contact">+2347064219422</p>
+                    <p>olusolatemitayo656@gmail.com</p>
+                </span>
+            </div> 
+            <p id="copy">&copy;copyright 2023</p>  
+                
         </section>
-        
     </div>
   )
 }
